@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>India Weather Forecast</h1>
+        
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name in India...">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            <button id="location-btn"><i class="fas fa-location-arrow"></i> Use My Location</button>
+        </div>
+        
+        <div class="current-weather">
+            <div class="weather-card main-card">
+                <h2 id="current-city">Search for a city</h2>
+                <div class="weather-info">
+                    <div id="current-icon"></div>
+                    <div class="temp-details">
+                        <span id="current-temp">--</span>
+                        <span id="current-desc">--</span>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <div><i class="fas fa-temperature-high"></i> Feels like: <span id="feels-like">--</span></div>
+                    <div><i class="fas fa-tint"></i> Humidity: <span id="humidity">--</span></div>
+                    <div><i class="fas fa-wind"></i> Wind: <span id="wind">--</span></div>
+                    <div><i class="fas fa-compress-alt"></i> Pressure: <span id="pressure">--</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>5-Day Forecast</h2>
+        <div class="forecast-container" id="forecast-container">
+            <!-- Forecast cards will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="error-message" id="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
