@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // API configuration - REMEMBER TO REPLACE WITH YOUR OWN API KEY
-    const apiKey = 'Set_your_own_api'; // Get from https://home.openweathermap.org/api_keys
+    const apiKey = '682eecba2dd916bb08f24edf97501514'; // Get from https://home.openweathermap.org/api_keys
     const baseUrl = 'https://api.openweathermap.org/data/2.5';
     
     // Cache configuration
@@ -210,3 +210,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
